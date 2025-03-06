@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enginuity Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        'neo': '20px 20px 60px #d1d1d1, -20px -20px 60px #ffffff',
+                        'neo-inset': 'inset 5px 5px 10px #d1d1d1, inset -5px -5px 10px #ffffff'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #e6e7ee;
+        }
+        .neo-btn {
+            transition: all 0.3s ease;
+        }
+        .neo-btn:active {
+            box-shadow: inset 5px 5px 10px #d1d1d1, inset -5px -5px 10px #ffffff;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="p-4 shadow-neo mb-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">Enginuity Hub</h1>
+            <div class="flex gap-4">
+                <button class="neo-btn px-4 py-2 rounded-lg shadow-neo hover:shadow-neo-inset">Login</button>
+                <button class="neo-btn px-4 py-2 rounded-lg shadow-neo bg-blue-500 text-white hover:bg-blue-600">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4">
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Project Collaboration -->
+            <div class="p-6 rounded-xl shadow-neo">
+                <div class="text-3xl mb-4 text-blue-500"><i class="bi bi-people-fill"></i></div>
+                <h3 class="text-xl font-semibold mb-2">Project Collaboration</h3>
+                <p class="text-gray-600">Team-based project management with version control. Work together seamlessly.</p>
+                <button class="neo-btn mt-4 px-4 py-2 rounded-lg shadow-neo w-full hover:shadow-neo-inset">
+                    Start Project
+                </button>
+            </div>
+
+            <!-- Tech Wiki -->
+            <div class="p-6 rounded-xl shadow-neo">
+                <div class="text-3xl mb-4 text-blue-500"><i class="bi bi-book-fill"></i></div>
+                <h3 class="text-xl font-semibold mb-2">Tech Wiki</h3>
+                <p class="text-gray-600">Access crowdsourced engineering notes, tutorials, and comprehensive guides.</p>
+                <button class="neo-btn mt-4 px-4 py-2 rounded-lg shadow-neo w-full hover:shadow-neo-inset">
+                    Browse Wiki
+                </button>
+            </div>
+
+            <!-- AI Search -->
+            <div class="p-6 rounded-xl shadow-neo">
+                <div class="text-3xl mb-4 text-blue-500"><i class="bi bi-search"></i></div>
+                <h3 class="text-xl font-semibold mb-2">AI-Powered Search</h3>
+                <p class="text-gray-600">Find relevant resources, projects, or team members instantly with AI assistance.</p>
+                <div class="mt-4 flex gap-2">
+                    <input type="text" placeholder="Search anything..." class="w-full px-4 py-2 rounded-lg shadow-neo-inset outline-none">
+                    <button class="neo-btn px-4 py-2 rounded-lg shadow-neo hover:shadow-neo-inset">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Live Webinars -->
+            <div class="p-6 rounded-xl shadow-neo">
+                <div class="text-3xl mb-4 text-blue-500"><i class="bi bi-camera-video-fill"></i></div>
+                <h3 class="text-xl font-semibold mb-2">Live Webinars & Workshops</h3>
+                <p class="text-gray-600">Attend and host online knowledge-sharing sessions with experts.</p>
+                <button class="neo-btn mt-4 px-4 py-2 rounded-lg shadow-neo w-full hover:shadow-neo-inset">
+                    View Schedule
+                </button>
+            </div>
+
+            <!-- Hackathon Zone -->
+            <div class="p-6 rounded-xl shadow-neo">
+                <div class="text-3xl mb-4 text-blue-500"><i class="bi bi-trophy-fill"></i></div>
+                <h3 class="text-xl font-semibold mb-2">Hackathon Zone</h3>
+                <p class="text-gray-600">Track and participate in upcoming competitions and challenges.</p>
+                <button class="neo-btn mt-4 px-4 py-2 rounded-lg shadow-neo w-full hover:shadow-neo-inset">
+                    Join Hackathon
+                </button>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="p-6 rounded-xl shadow-neo">
+                <div class="text-3xl mb-4 text-blue-500"><i class="bi bi-graph-up"></i></div>
+                <h3 class="text-xl font-semibold mb-2">Community Stats</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="text-center p-3 rounded-lg shadow-neo-inset">
+                        <p class="font-bold text-xl">10k+</p>
+                        <p class="text-sm text-gray-600">Members</p>
+                    </div>
+                    <div class="text-center p-3 rounded-lg shadow-neo-inset">
+                        <p class="font-bold text-xl">500+</p>
+                        <p class="text-sm text-gray-600">Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="p-8 rounded-xl shadow-neo mb-12">
+            <h3 class="text-2xl font-semibold mb-4 text-center">Stay Updated</h3>
+            <div class="max-w-md mx-auto flex gap-4">
+                <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 rounded-lg shadow-neo-inset outline-none">
+                <button class="neo-btn px-6 py-2 rounded-lg shadow-neo bg-blue-500 text-white hover:bg-blue-600">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 p-6 shadow-neo">
+        <div class="container mx-auto text-center text-gray-600">
+            <div class="flex justify-center gap-6 mb-4">
+                <a href="#" class="hover:text-blue-500"><i class="bi bi-github"></i></a>
+                <a href="#" class="hover:text-blue-500"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="hover:text-blue-500"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <p>© 2024 Enginuity Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add click effect to neo buttons
+        document.querySelectorAll('.neo-btn').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.style.boxShadow = 'inset 5px 5px 10px #d1d1d1, inset -5px -5px 10px #ffffff';
+            });
+            button.addEventListener('mouseup', () => {
+                button.style.boxShadow = '20px 20px 60px #d1d1d1, -20px -20px 60px #ffffff';
+            });
+        });
+
+        // Simple search functionality
+        const searchInput = document.querySelector('input[type="search"]');
+        const searchButton = searchInput?.nextElementSibling;
+
+        if (searchButton) {
+            searchButton.addEventListener('click', () => {
+                const searchTerm = searchInput.value;
+                if (searchTerm.trim()) {
+                    alert(`Searching for: ${searchTerm}`);
+                    // Here you would typically integrate with your AI search API
+                }
+            });
+        }
+
+        // Newsletter subscription
+        const emailInput = document.querySelector('input[type="email"]');
+        const subscribeButton = emailInput?.nextElementSibling;
+
+        if (subscribeButton) {
+            subscribeButton.addEventListener('click', () => {
+                const email = emailInput.value;
+                if (email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+                    alert('Thank you for subscribing!');
+                    emailInput.value = '';
+                } else {
+                    alert('Please enter a valid email address');
+                }
+            });
+        }
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
